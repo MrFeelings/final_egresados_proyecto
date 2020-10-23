@@ -8,6 +8,8 @@ uso de instalaciones
 carnetizacion
 
 
-
+pendiente
+historial
+mondas ir ahora
 
 recordar los herfs

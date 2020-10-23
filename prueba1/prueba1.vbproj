@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -17,7 +18,7 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <MyType>Custom</MyType>
     <UseIISExpress>true</UseIISExpress>
-    <Use64BitIISExpress />
+    <Use64BitIISExpress>false</Use64BitIISExpress>
     <IISExpressSSLPort>44364</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -25,6 +26,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>3.9</TypeScriptToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -126,6 +128,14 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clases\conexion.vb" />
+    <Compile Include="inicio.aspx.designer.vb">
+      <DependentUpon>inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inicio.aspx.vb">
+      <DependentUpon>inicio.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -155,6 +165,35 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="gestion.html" />
+    <Content Include="certificaciones.html" />
+    <Content Include="HtmlPage1.html" />
+    <Content Include="img\bg-pro.jpg" />
+    <Content Include="img\bg-pro2.jpg" />
+    <Content Include="img\educacionc\educa2.png" />
+    <Content Include="img\educacionc\educacion1.jpg" />
+    <Content Include="img\educacionc\educacionc-bg.jpg" />
+    <Content Include="img\galeria\galeria-1.png" />
+    <Content Include="img\galeria\galeria-2.png" />
+    <Content Include="img\galeria\galeria-3.png" />
+    <Content Include="img\galeria\galeria-4.png" />
+    <Content Include="img\hero-bg.jpg" />
+    <Content Include="img\instala\inst1.jpg" />
+    <Content Include="img\instala\inst2.jpg" />
+    <Content Include="img\instala\inst3.png" />
+    <Content Include="img\instala\inst4.jpg" />
+    <Content Include="img\instala\inst5.jpg" />
+    <Content Include="img\instala\inst6.jpg" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\noticia\cancion5.png" />
+    <Content Include="img\noticia\noticia1.jpg" />
+    <Content Include="img\noticia\noticia2.jpg" />
+    <Content Include="img\noticia\noticia3.jpg" />
+    <Content Include="img\noticia\noticia4.jpg" />
+    <Content Include="img\noticia\noticia5.jpg" />
+    <Content Include="img\noticia\noticia6.png" />
+    <Content Include="img\represen\represent.jpg" />
+    <Content Include="inicio.aspx" />
     <Content Include="resources\about.html" />
     <Content Include="resources\.html" />
     <Content Include="usoinstalaciones.html" />
@@ -221,8 +260,6 @@
     <Content Include="img\feature\feature-2.png" />
     <Content Include="img\feature\feature-3.png" />
     <Content Include="img\footer-logo.png" />
-    <Content Include="img\hero-bg.jpg" />
-    <Content Include="img\logo.png" />
     <Content Include="img\pricing-bg.jpg" />
     <Content Include="img\team\team-1.png" />
     <Content Include="img\team\team-2.png" />
@@ -279,7 +316,9 @@
       <DependentUpon>web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -297,6 +336,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ProjectExtensions>

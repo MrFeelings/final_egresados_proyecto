@@ -7,7 +7,7 @@
     <meta name="keywords" content="Dreams, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dreams | Template</title>
+    <title>login in</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -21,53 +21,24 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+
 </head>
 
-<body>
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
 
-    <!-- Offcanvas Menu Begin -->
-    <div class="offcanvas-menu-overlay"></div>
-    <div class="offcanvas-menu-wrapper">
-        <div class="offcanvas__search">
-            <i class="fa fa-search search-switch"></i>
-        </div>
-        <div class="offcanvas__logo">
-            <a href="./index.html"><img src="img/logo.png" alt=""></a>
-        </div>
-        <nav class="offcanvas__menu mobile-menu">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./courses.html">Courses</a></li>
-                <li class="active"><a href="#">Pages</a>
-                    <ul class="dropdown">
-                        <li><a href="./about.html">About</a></li>
-                        <li><a href="./instructor.html">Instructor</a></li>
-                        <li><a href="./pricing.html">Pricing</a></li>
-                        <li><a href="./faq.html">FAQ</a></li>
-                        <li><a href="./course-details.html">Course Details</a></li>
-                        <li><a href="./blog-details.html">Blog Details</a></li>
-                    </ul>
-                </li>
-                <li><a href="./blog.html">News</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div id="mobile-menu-wrap"></div>
-        <div class="offcanvas__social">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-            <a href="#"><i class="fa fa-dribbble"></i></a>
-        </div>
-        <div class="offcanvas__btn">
-            <a href="#" class="primary-btn">Get Started</a>
-        </div>
-    </div>
-    <!-- Offcanvas Menu End -->
+<body>
+
+    <!-- scripts-->
+    <script>
+        function login() {
+            var numero1 = document.getElementById("numero1").value;
+            var numero2 = document.getElementById("numero2").value;
+
+
+            var suma = parseInt(numero1) + parseInt(numero2);
+            document.writeln(suma);
+        }
+
+    </script>
 
     <!-- Header Section Begin -->
     <header class="header">
@@ -75,23 +46,23 @@
             <div class="row">
                 <div class="col-lg-2">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                        <a href="./index.html"><img src="./img/logo.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-5">
                     <nav class="header__menu">
                         <ul>
                             <li class="active"><a href="./index.html">Home</a></li>
-                            <li><a href="./courses.html">Representatives</a></li>
-                            <li><a href="./blog.html">News</a></li>
+                            <li><a href="./representatives.html">Representatives</a></li>
+                            <li><a href="./noticias.html">News</a></li>
                             <li>
                                 <a href="#">General</a>
                                 <ul class="dropdown">
-                                    <li><a href="./about.html">educacion continua</a></li>
-                                    <li><a href="./instructor.html">posgrados</a></li>
-                                    <li><a href="./pricing.html">carnetizacion</a></li>
-                                    <li><a href="./faq.html">certificados</a></li>
-                                    <li><a href="./course-details.html">uso de instalaciones</a></li>
+                                    <li><a href="./educacioncontinua.html">educacion continua</a></li>
+                                    <li><a href="./posgrados.html">posgrados</a></li>
+                                    <li><a href="./carnetizacion.html">carnetizacion</a></li>
+                                    <li><a href="./certificaciones.html">certificados</a></li>
+                                    <li><a href="./usoinstalaciones.html">uso de instalaciones</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -100,12 +71,12 @@
                 <div class="col-lg-5">
                     <div class="header__right">
                         <div class="header__right__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="https://es-la.facebook.com/ucatolicaluisamigo/"><i class="fa fa-facebook"></i></a>
+                            <a href="https://twitter.com/uluisamigo?lang=en"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/ucatolicaluisamigo/?hl=en"><i class="fa fa-instagram"></i></a>
                         </div>
                         <div class="header__right__btn">
-                            <a href="#" class="primary-btn">Iniciar sesion</a>
+                            <a href="./login.html" class="primary-btn">Iniciar sesion</a>
                         </div>
                     </div>
                 </div>
@@ -116,23 +87,6 @@
         </div>
     </header>
     <!-- Header Section End -->
-
-    <!-- Breadcrumb Begin -->
-    <div class="breadcrumb-option">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumb__links">
-                        <a href="/Views/Home/Index.cshtml"><i class="fa fa-home"></i> Home</a>
-                        <span>Loging</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Breadcrumb End -->
-
-
     <!-- Contact loging Section Begin -->
     <section class="contact spad">
         <div class="container">
@@ -144,22 +98,21 @@
                         <form action="#">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <input type="text" placeholder="User">
+                                    <input type="text" placeholder="Usuario" id="elpapirico">
+                                    
                                 </div>
                                 <div class="col-lg-6">
-                                    <input type="password" placeholder="password">
+                                    <input type="password" placeholder="password" id="contraseñapapirico">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <button type="submit" class="site-btn">join in</button>
+                                    <button onclick="login()"  class="site-btn">join in</button>                                    
                                 </div>
-                                <div class="col-lg-6">
-                                    <button type="submit" class="site-btn">join up</button>
-                                </div>
+                                
                             </div>
                             <div class="breadcrumb__links">
-                                <a href="/Views/index/Index.cshtml">Olvide mi contraseña</a>
+                                <a href="./prueba1/WindowsFormsApp1/Form1.cs">Olvide mi contraseña</a>
                             </div>
                         </form>
                     </div>
@@ -168,7 +121,6 @@
         </div>
     </section>
     <!-- Contact Section End -->
-
     <!-- Footer Section Begin -->
     <footer class="footer">
         <div class="container">
@@ -177,9 +129,9 @@
                     <div class="footer__widget">
                         <h5>Universidad</h5>
                         <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">History</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="https://en.wikipedia.org/wiki/Luis_Amig%C3%B3_Catholic_University">About Us</a></li>
+                            <li><a href="https://www.funlam.edu.co/modules/facultadeducacion/item.php?itemid=25">History</a></li>
+                            <li><a href="https://www.funlam.edu.co/modules/generalinternet/item.php?itemid=521">Privacy Policy</a></li>
                         </ul>
                     </div>
                 </div>
@@ -187,11 +139,11 @@
                     <div class="footer__widget">
                         <h5>Services</h5>
                         <ul>
-                            <li><a href="#">Educacion continua</a></li>
-                            <li><a href="#">posgrados</a></li>
-                            <li><a href="#">Carnetizacion</a></li>
-                            <li><a href="#">Certificados</a></li>
-                            <li><a href="#">Uso de instalaciones</a></li>
+                            <li><a href="../educacioncontinua.html">Educacion continua</a></li>
+                            <li><a href="../posgrados.html">posgrados</a></li>
+                            <li><a href="../carnetizacion.html">Carnetizacion</a></li>
+                            <li><a href="../certificaciones.html">Certificados</a></li>
+                            <li><a href="../usoinstalaciones.html">Uso de instalaciones</a></li>
                         </ul>
                     </div>
                 </div>
@@ -199,18 +151,17 @@
                     <div class="footer__widget">
                         <h5>USEFUL LINKS</h5>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Representatives</a></li>
-                            <li><a href="#">Galery</a></li>
-                            <li><a href="#">Services</a></li>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./noticias.html">News</a></li>
+                            <li><a href="../representatives.html">Representatives</a></li>
+                            <li><a href="../usoinstalaciones.html">Services</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__logo">
-                            <a href="#"><img src="/content/img/footer-logo.png" alt=""></a>
+                            <a href="#"><img src="img/logo.png" alt=""></a>
                         </div>
                         <p>Address : Tv. 51a ##67B 90, Medellín, Antioquia, Colombia</p>
                         <ul>
@@ -236,7 +187,6 @@
         </div>
     </footer>
     <!-- Footer Section End -->
-
     <!-- Search Begin -->
     <div class="search-model">
         <div class="h-100 d-flex align-items-center justify-content-center">
@@ -247,7 +197,6 @@
         </div>
     </div>
     <!-- Search End -->
-
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
