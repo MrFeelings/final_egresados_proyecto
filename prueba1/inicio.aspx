@@ -48,12 +48,13 @@
     
 </head>
 <body style="height: 870px" >
+    <form id="form1" runat="server">
     <header class="header">
         <div class="container">
             <div class="row">
                 <div class="col-lg-2">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="./img/logo.png" alt=""></a>
+                        <a href="./index.html"><img src="./img/logo.png" alt=""/></a>
                     </div>
                 </div>
                 <div class="col-lg-5">
@@ -98,27 +99,33 @@
                 <div class="col-lg-8 col-md-8">
                     <div class="contact__form">
                         <h4>login to the system</h4>
-                        <form action="#">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <input type="text" placeholder="User" name="elpapirico"/>
+                                    
+                                    <asp:TextBox ID="TextBox1" runat="server" placeholder="User"></asp:TextBox>
                                 </div>
                                 <div class="col-lg-6">
-                                    <input type="password" placeholder="password" name="contraseñapapirico"/>
+                                    <asp:TextBox ID="TextBox2" runat="server" placeholder="Password"></asp:TextBox>
                                 </div>
                             </div>
+                           <br />
+                           <br />
                             <div class="row">
-                                <div class="col-lg-6">
-                                    <button onclick="login()" type="submit" class="site-btn">join in</button>
-
+                                <div class="col-lg-6">                                    
+                                    <asp:Button ID="Button1" runat="server" Text="join in" CssClass="site-btn" />
+                                    
                                 </div>
-                                <div class="col-lg-6">
-                                </div>
+                                
                             </div>
                             <div class="breadcrumb__links">
                                 <a href="./prueba1/WindowsFormsApp1/Form1.cs">Olvide mi contraseña</a>
                             </div>
-                        </form>
+                            <div class="row">
+                                <div class="col-lg-6">                                    
+                                    <asp:Label ID="Label1" runat="server" ForeColor="#006600"></asp:Label>                                    
+                                </div>
+                                
+                            </div>
                     </div>
                 </div>
             </div>
@@ -164,7 +171,7 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__logo">
-                            <a href="#"><img src="img/logo.png" alt=""></a>
+                            <a href="#"><img src="img/logo.png" alt=""/></a>
                         </div>
                         <p>Address : Tv. 51a ##67B 90, Medellín, Antioquia, Colombia</p>
                         <ul>
@@ -192,10 +199,8 @@
         <div class="search-model">
         <div class="h-100 d-flex align-items-center justify-content-center">
             <div class="search-close-switch">+</div>
-            <form class="search-model-form">
                 <input type="text" id="search-input" placeholder="Search here....."/>
-            </form>
-        </div>
+            </div>
     </div>
     <!-- Search End -->
     <!-- Js Plugins -->
@@ -207,5 +212,6 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    </form>
 </body>
 </html>

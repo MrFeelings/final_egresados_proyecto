@@ -1,81 +1,39 @@
-﻿<!DOCTYPE html>
-<html lang="zxx">
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="certificaciones.aspx.vb" Inherits="prueba1.certificaciones" %>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Dreams Template">
-    <meta name="keywords" content="Dreams, unica, creative, html">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Certificaciones</title>
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zxx">
+
+<head runat="server">
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Dreams Template"/>
+    <meta name="keywords" content="Dreams, unica, creative, html"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>certificaciones</title>
+        <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet"/>
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css"/>
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css"/>
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
 </head>
-
-<body>
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
-
-    <!-- Offcanvas Menu Begin -->
-    <div class="offcanvas-menu-overlay"></div>
-    <div class="offcanvas-menu-wrapper">
-        <div class="offcanvas__search">
-            <i class="fa fa-search search-switch"></i>
-        </div>
-        <div class="offcanvas__logo">
-            <a href="./index.html"><img src="img/logo.png" alt=""></a>
-        </div>
-        <nav class="offcanvas__menu mobile-menu">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./courses.html">Courses</a></li>
-                <li class="active">
-                    <a href="#">Pages</a>
-                    <ul class="dropdown">
-                        <li><a href="./about.html">About</a></li>
-                        <li><a href="./instructor.html">Instructor</a></li>
-                        <li><a href="./pricing.html">Pricing</a></li>
-                        <li><a href="./faq.html">FAQ</a></li>
-                        <li><a href="./course-details.html">Course Details</a></li>
-                        <li><a href="./blog-details.html">Blog Details</a></li>
-                    </ul>
-                </li>
-                <li><a href="./blog.html">News</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div id="mobile-menu-wrap"></div>
-        <div class="offcanvas__social">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-            <a href="#"><i class="fa fa-dribbble"></i></a>
-        </div>
-        <div class="offcanvas__btn">
-            <a href="#" class="primary-btn">Get Started</a>
-        </div>
-    </div>
-    <!-- Offcanvas Menu End -->
-    <!-- Header Section Begin -->
+<body style="height: 870px" >
+    <form id="form1" runat="server">
     <header class="header">
         <div class="container">
             <div class="row">
                 <div class="col-lg-2">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="./img/logo.png" alt=""></a>
+                        <a href="./index.html"><img src="./img/logo.png" alt=""/></a>
                     </div>
                 </div>
                 <div class="col-lg-5">
@@ -100,13 +58,11 @@
                 <div class="col-lg-5">
                     <div class="header__right">
                         <div class="header__right__social">
-                            <a href="https://es-la.facebook.com/ucatolicaluisamigo/"><i class="fa fa-facebook"></i></a>
+                            <a href="./prueba1/WindowsFormsApp1/Form1.cs"><i class="fa fa-facebook"></i></a>
                             <a href="https://twitter.com/uluisamigo?lang=en"><i class="fa fa-twitter"></i></a>
                             <a href="https://www.instagram.com/ucatolicaluisamigo/?hl=en"><i class="fa fa-instagram"></i></a>
                         </div>
-                        <div class="header__right__btn">
-                            <a href="./login.html" class="primary-btn">Iniciar sesion</a>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -115,30 +71,7 @@
             </div>
         </div>
     </header>
-    <!-- Header Section End -->
-    <!-- Breadcrumb Begin -->
-    <div class="breadcrumb-option">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="breadcrumb-option">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumb__links">
-                        <a href="./index.html"><i class="fa fa-home"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Casa</font></font></a>
-                        <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cursos</font></font></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Breadcrumb End -->
-    <!-- Courses Details Section Begin -->
+   <!-- Courses Details Section Begin -->
     <section class="faq spad">
         <div class="container">
             <div class="row">
@@ -155,19 +88,24 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <form action="#">
+                                    
                                         <div class="row">
-                                            <select>
-                                            </select><div class="nice-select" tabindex="0"><span class="current"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tipo de documento</font></font></span><ul class="list"><li data-value="" class="option selected"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tipo de documento</font></font></li><li data-value="" class="option"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">certificado carrera</font></font></li><li data-value="" class="option"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">diploma</font></font></li><li data-value="" class="option"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">promedio general</font></font></li></ul></div>
-                                            <div class="col-lg-18">
-                                                <input type="text" placeholder="Identificacion" id="elpapirico">                                    
+                                            <asp:DropDownList ID="DropDownList1" runat="server" class="nice-select"> 
+                                                <asp:ListItem Value="0">perro</asp:ListItem>
+                                                <asp:ListItem Value="1">gato</asp:ListItem>
+                                            </asp:DropDownList>
+                                         
+                                            <div class="col-lg-18">                                                    
+                                                <br />
+                                                <asp:TextBox ID="TextBox3" runat="server" placeholder="identifi"></asp:TextBox>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 text-center">
-                                            <button type="submit" class="site-btn second-bg"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ENVIAR CONSULTA</font></font></button>
+                                        <br/>
+                                        <div class="col-lg-12 text-center">                                            
+                                            <asp:Button ID="Button2" runat="server" Text="ENVIAR CONSULTA" class="site-btn second-bg" />
                                         </div>
 
-                                    </form>
+                                    
                                 </div>
                             </div>
                         </section>
@@ -175,16 +113,15 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <!-- resutado-->
+                    
                 </div>
             </div>
         </div>
     </section>
-
-   
+        <asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Italic="True" Font-Overline="True" Font-Size="XX-Large" ForeColor="Maroon"></asp:Label>
     <!-- Courses Details Section End -->
 
-    <!-- Footer Section Begin -->
-    <footer class="footer">
+        <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-2 col-sm-6">
@@ -223,7 +160,7 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__logo">
-                            <a href="#"><img src="img/logo.png" alt=""></a>
+                            <a href="#"><img src="img/logo.png" alt=""/></a>
                         </div>
                         <p>Address : Tv. 51a ##67B 90, Medellín, Antioquia, Colombia</p>
                         <ul>
@@ -248,15 +185,11 @@
             </div>
         </div>
     </footer>
-    <!-- Footer Section End -->
-    <!-- Search Begin -->
-    <div class="search-model">
+        <div class="search-model">
         <div class="h-100 d-flex align-items-center justify-content-center">
             <div class="search-close-switch">+</div>
-            <form class="search-model-form">
-                <input type="text" id="search-input" placeholder="Search here.....">
-            </form>
-        </div>
+                <input type="text" id="search-input" placeholder="Search here....."/>
+            </div>
     </div>
     <!-- Search End -->
     <!-- Js Plugins -->
@@ -268,6 +201,7 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    </form>
 </body>
 
 </html>

@@ -1,30 +1,33 @@
-﻿<!DOCTYPE html>
-<html lang="zxx">
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="gestion.aspx.vb" Inherits="prueba1.gestion" %>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Dreams Template">
-    <meta name="keywords" content="Dreams, unica, creative, html">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Certificaciones</title>
+<!DOCTYPE html>
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zxx">
+<head runat="server">
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Dreams Template"/>
+    <meta name="keywords" content="Dreams, unica, creative, html"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>certificaciones</title>
+        <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet"/>
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css"/>
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css"/>
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
 </head>
 
 <body>
-    <!-- Page Preloder -->
+    <form id="form1" runat="server">
+        <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
     </div>
@@ -150,21 +153,34 @@
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="section-title center-title">
-                                                <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">siempre disponibles para ti</font></font></span>
-                                                <h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Descarga los documentos que necesites</font></font></h2>
+                                                <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></span>
+                                                <h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Gestion de cuentas</font></font></h2>
                                             </div>
                                         </div>
                                     </div>
                                     <form action="#">
+                                        <div class="row">                                            
+                                            <asp:TextBox ID="TextBox4" runat="server" placeholder="idcuenta"></asp:TextBox>
+                                        </div>
                                         <div class="row">
-                                            <select>
-                                            </select><div class="nice-select" tabindex="0"><span class="current"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tipo de documento</font></font></span><ul class="list"><li data-value="" class="option selected"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tipo de documento</font></font></li><li data-value="" class="option"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">certificado carrera</font></font></li><li data-value="" class="option"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">diploma</font></font></li><li data-value="" class="option"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">promedio general</font></font></li></ul></div>
-                                            <div class="col-lg-18">
-                                                <input type="text" placeholder="Identificacion" id="elpapirico">                                    
-                                            </div>
+                                            <asp:TextBox ID="TextBox1" runat="server" placeholder="Nombre"></asp:TextBox>
+                                        </div>
+                                        <div class="row">
+                                            <asp:TextBox ID="TextBox2" runat="server" placeholder="contraseña"></asp:TextBox>
+                                        </div>
+                                        
+
+                                        <div class="col-lg-12 text-center">
+<!--                                            <button type="submit" class="site-btn second-bg"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CREAR CUENTAS.</font></font></button>-->
+                                            <asp:Button ID="Button1" runat="server" Text="Crear Cuenta" class="site-btn second-bg" />
                                         </div>
                                         <div class="col-lg-12 text-center">
-                                            <button type="submit" class="site-btn second-bg"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ENVIAR CONSULTA</font></font></button>
+<!--                                            <button type="submit" class="site-btn second-bg"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CAMBIO CUENTA</font></font></button> -->
+                                            <asp:Button ID="Button2" runat="server" Text="Modificar cuenta" class="site-btn second-bg" />
+                                        </div>
+                                        <div class="col-lg-12 text-center">
+<!--                                            <button type="submit" class="site-btn second-bg"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">BORRAR CUENTA</font></font></button>-->
+                                            <asp:Button ID="Button3" runat="server" Text="Borrar cuenta" class="site-btn second-bg" />
                                         </div>
 
                                     </form>
@@ -180,9 +196,7 @@
         </div>
     </section>
 
-   
     <!-- Courses Details Section End -->
-
     <!-- Footer Section Begin -->
     <footer class="footer">
         <div class="container">
@@ -268,6 +282,8 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+        <div>
+        </div>
+    </form>
 </body>
-
 </html>

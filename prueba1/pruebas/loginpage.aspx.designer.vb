@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class inicio
+Partial Public Class loginpage
 
     '''<summary>
     '''Control form1.
@@ -41,6 +41,15 @@ Partial Public Class inicio
     Protected WithEvents TextBox2 As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''Control GridView1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents GridView1 As Global.System.Web.UI.WebControls.GridView
+
+    '''<summary>
     '''Control Button1.
     '''</summary>
     '''<remarks>
@@ -48,6 +57,15 @@ Partial Public Class inicio
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Button1 As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Control Button2.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Button2 As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
     '''Control Label1.

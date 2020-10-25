@@ -1,14 +1,10 @@
 ﻿Imports System.Data.SqlClient
+Imports System.Diagnostics
 
 
-Public Class inicio
+
+Public Class loginpage
     Inherits System.Web.UI.Page
-    ' funcion de validar usuario
-
-
-
-
-
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
@@ -31,11 +27,11 @@ Public Class inicio
         Dim reader As SqlDataReader = objcmd.ExecuteReader
         If reader.Read Then
             MsgBox("melo")
-            Response.Redirect("./certificaciones.html")
+            Response.Redirect("google.com")
         Else
             MsgBox("nada parce")
         End If
 
-
     End Sub
+
 End Class
