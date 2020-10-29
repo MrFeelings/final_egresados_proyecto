@@ -16,8 +16,6 @@
         <br />
         <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
         <br />
-        <asp:GridView ID="GridView1" runat="server">
-        </asp:GridView>
         <br />
         <br />
         <asp:Button ID="Button1" runat="server" Text="entrar" />

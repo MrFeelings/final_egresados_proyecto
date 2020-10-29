@@ -39,7 +39,7 @@
             <i class="fa fa-search search-switch"></i>
         </div>
         <div class="offcanvas__logo">
-            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+            <a href="./index.html"><img src="img/logo.png" alt=""/></a>
         </div>
         <nav class="offcanvas__menu mobile-menu">
             <ul>
@@ -78,7 +78,7 @@
             <div class="row">
                 <div class="col-lg-2">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="./img/logo.png" alt=""></a>
+                        <a href="./index.html"><img src="./img/logo.png" alt=""/></a>
                     </div>
                 </div>
                 <div class="col-lg-5">
@@ -158,32 +158,54 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <form action="#">
+                                        <br/>
+                                        <br/>
                                         <div class="row">                                            
                                             <asp:TextBox ID="TextBox4" runat="server" placeholder="idcuenta"></asp:TextBox>
                                         </div>
                                         <div class="row">
-                                            <asp:TextBox ID="TextBox1" runat="server" placeholder="Nombre"></asp:TextBox>
+                                            <asp:TextBox ID="TextBox1" runat="server" placeholder="contraseña"></asp:TextBox>
                                         </div>
                                         <div class="row">
-                                            <asp:TextBox ID="TextBox2" runat="server" placeholder="contraseña"></asp:TextBox>
+                                               <asp:DropDownList ID="DropDownList2" runat="server" > 
+                                                <asp:ListItem Value="0">admin</asp:ListItem>
+                                                <asp:ListItem Value="1">usuario</asp:ListItem>
+                                            </asp:DropDownList>
                                         </div>
-                                        
+                                    <br/>
+                                        <br/>
+                                        <div class="col-lg-12 text-center">
 
-                                        <div class="col-lg-12 text-center">
-<!--                                            <button type="submit" class="site-btn second-bg"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CREAR CUENTAS.</font></font></button>-->
-                                            <asp:Button ID="Button1" runat="server" Text="Crear Cuenta" class="site-btn second-bg" />
+                                            <asp:Button ID="Button4" runat="server" Text="Consultar Cuentas"  /> 
                                         </div>
+                                        <br/>
+                                        <br/>
                                         <div class="col-lg-12 text-center">
-<!--                                            <button type="submit" class="site-btn second-bg"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CAMBIO CUENTA</font></font></button> -->
-                                            <asp:Button ID="Button2" runat="server" Text="Modificar cuenta" class="site-btn second-bg" />
-                                        </div>
-                                        <div class="col-lg-12 text-center">
-<!--                                            <button type="submit" class="site-btn second-bg"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">BORRAR CUENTA</font></font></button>-->
-                                            <asp:Button ID="Button3" runat="server" Text="Borrar cuenta" class="site-btn second-bg" />
-                                        </div>
 
-                                    </form>
+                                            <asp:Button ID="Button1" runat="server" Text="Crear Cuenta"  />
+                                        </div>
+                                        <br/>
+                                        <br/>
+                                        <div class="col-lg-12 text-center">
+                                            <asp:DropDownList ID="DropDownList1" runat="server" > 
+                                                <asp:ListItem Value="0">modificar id</asp:ListItem>
+                                                <asp:ListItem Value="1">modificar contraseña</asp:ListItem>
+                                                <asp:ListItem Value="2">modificar tipo usuario</asp:ListItem>
+                                            </asp:DropDownList>                                            
+                                        &nbsp;&nbsp;&nbsp;&nbsp;
+
+                                            <asp:Button ID="Button5" runat="server" Text="modificar"  />
+                                        </div>
+                                        <br/>
+                                        <br/>
+                                        <div class="col-lg-12 text-center">
+
+                                            <asp:Button ID="Button3" runat="server" Text="Borrar cuenta"  />
+                                        </div>
+                                        <br/>
+                                        <asp:Label ID="Label1" runat="server" ForeColor="#009933"></asp:Label>
+                                        <br/>
+                                   
                                 </div>
                             </div>
                         </section>
@@ -237,7 +259,7 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__logo">
-                            <a href="#"><img src="img/logo.png" alt=""></a>
+                            <a href="#"><img src="img/logo.png" alt=""/></a>
                         </div>
                         <p>Address : Tv. 51a ##67B 90, Medellín, Antioquia, Colombia</p>
                         <ul>
@@ -268,7 +290,7 @@
         <div class="h-100 d-flex align-items-center justify-content-center">
             <div class="search-close-switch">+</div>
             <form class="search-model-form">
-                <input type="text" id="search-input" placeholder="Search here.....">
+                <input type="text" id="search-input" placeholder="Search here....."/>
             </form>
         </div>
     </div>

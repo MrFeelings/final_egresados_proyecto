@@ -6,8 +6,9 @@ Public Class certificaciones
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
     End Sub
-
+    ' consultar
     Protected Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
         Using Conn As New SqlConnection("Data Source=MI-PCECITA;Initial Catalog=db1;Integrated Security=True")
             Conn.Open()
             If DropDownList1.SelectedValue = 0 Then
